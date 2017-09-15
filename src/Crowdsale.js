@@ -1004,11 +1004,11 @@ class Crowdsale extends Component {
 export default Crowdsale;
 
 function txFormatter(cell, row) {
-  return '<tr><td><a href="https://rinkeby.etherscan.io/tx/' + cell + '" target="_blank">' + cell + '</a></td><tr>';
+  return '<tr><td><a href="https://etherscan.io/tx/' + cell + '" target="_blank">' + cell + '</a></td><tr>';
 }
 
 function linkFormatter(cell, row) {
-  return '<tr><td><a href="https://rinkeby.etherscan.io/address/' + cell + '" target="_blank">' + cell + '</a></td><tr>';
+  return '<tr><td><a href="https://etherscan.io/address/' + cell + '" target="_blank">' + cell + '</a></td><tr>';
 }
 
 injectGlobal`
