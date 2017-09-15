@@ -72,7 +72,7 @@ class Crowdsale extends Component {
       addressPrivilegedWallet: '',
 
       dateStart: 0,
-      dateFinish: new Date(1508025540 * 1000).toUTCString(),
+      dateFinish: new Date(1508284740 * 1000).toUTCString(),
       dateLeft: 0,
 
       datePicker: 0,
@@ -190,7 +190,7 @@ class Crowdsale extends Component {
   async updateCountdown() {
     
     let now  = moment().format();
-    let finish = moment.unix(1506729540).format();
+    let finish = moment.unix(1508284740).format();
     
     var finishTime = moment(finish);
     var nowTime = moment(now);
