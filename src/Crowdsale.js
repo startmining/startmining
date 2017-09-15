@@ -34,7 +34,7 @@ class Crowdsale extends Component {
       priceCurrentInvestor: 0,
       investorsCount: 0,
 
-      minimalPriceCurrentInvestor: 40354609929078010,
+      minimalPriceCurrentInvestor: 36654609929078010,
       currentTokenPrice: '',
 
       oraclizeTax: 4000000000000000,

@@ -118,7 +118,7 @@ contract Crowdsale is Ownable {
 
       decimals = 35460992907801; // 0.0000003 ETH // 2 decimals
 
-      tax = 4000000000000000; // tax for Oraclize service
+      tax = 36000000000000000; //tax && minimum price ~10$
 
       //minPrice = decimals + tax; // ~10$
 
