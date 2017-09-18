@@ -49,7 +49,7 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "4.0.0-alpha.6",
     "dotenv": "^2.0.0",
     "material-ui": "^0.19.1",
     "moment": "^2.18.1",

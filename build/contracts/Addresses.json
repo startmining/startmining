@@ -1,0 +1,92 @@
+{
+  "contract_name": "Addresses",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "successFee",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "addr2",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "addr3",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "bounty",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "addr1",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "addr4",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60008054600160a060020a0319908116731626079328312cdb1e731a934a547c6d81b3ee2c90811790925560018054821673f280dacf47f33f442cf5fa9d20abaef4b6e9ca121790556002805482168317905560038054821683179055600480548216831790556005805490911690911790555b5b61021a806100946000396000f300606060405236156100755763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416637554fffd811461007a5780638de38f98146100a95780639347e6d7146100d8578063943dfef114610107578063eabe09ad14610136578063fd7808f614610165575b600080fd5b341561008557600080fd5b61008d610194565b604051600160a060020a03909116815260200160405180910390f35b34156100b457600080fd5b61008d6101a3565b604051600160a060020a03909116815260200160405180910390f35b34156100e357600080fd5b61008d6101b2565b604051600160a060020a03909116815260200160405180910390f35b341561011257600080fd5b61008d6101c1565b604051600160a060020a03909116815260200160405180910390f35b341561014157600080fd5b61008d6101d0565b604051600160a060020a03909116815260200160405180910390f35b341561017057600080fd5b61008d6101df565b604051600160a060020a03909116815260200160405180910390f35b600154600160a060020a031681565b600354600160a060020a031681565b600454600160a060020a031681565b600054600160a060020a031681565b600254600160a060020a031681565b600554600160a060020a0316815600a165627a7a723058202fe81e6518f2bebbc6754fe3e8899c617386a59fadc0357edf46bc690e80f3d60029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1505703026689
+}

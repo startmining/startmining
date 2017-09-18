@@ -40,7 +40,7 @@ contract Crowdsale is Ownable {
 
     Addresses private addresses = new Addresses();
 
-    WrapperOraclize private wrapper = WrapperOraclize(0x09296cff4c18810d247cce135b507b2837002d52);
+    WrapperOraclize private wrapper = WrapperOraclize(0xfC484c66daE464CC6055d7a4782Ec8761dc9842F);
 
     uint256 private ico_start;
     uint256 private ico_finish;
@@ -178,10 +178,6 @@ contract Crowdsale is Ownable {
     function() external payable {
       mint();
     }
-
-  function getETHUSD() public constant returns(string) {
-    ShowPrice('rsdtrhjsth');
-  }
 
   function bytesToUInt(bytes32 v) constant returns (uint ret) {
         if (v == 0x0) {
@@ -610,4 +606,4 @@ contract Crowdsale is Ownable {
     }
 }
 
-//0xd641f7fe157317909ab64bcbd9efa9b685b58de3
+
