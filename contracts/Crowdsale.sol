@@ -400,6 +400,9 @@ contract Crowdsale is Ownable {
         revert();
       }
 
+      token.finishMinting();
+
+
       ShowInfoBool(mintingFinished);
       mintingFinished = true;
       ShowInfoBool(mintingFinished);
@@ -407,7 +410,7 @@ contract Crowdsale is Ownable {
       if (soldTokens < mincup) {
         if(investors.length != 0) {
           for (uint256 i=0; i < investors.length; i++) {
-            address addr = investors[i];          
+            address addr = investors[i];  
             token.burnTokens(addr);
           }
         }
@@ -419,6 +422,8 @@ contract Crowdsale is Ownable {
           }
         }
       }
+
+      token.burnFinish();
     }
 
     function getFinishStatus() public constant returns(bool) {

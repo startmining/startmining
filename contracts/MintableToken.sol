@@ -8,6 +8,10 @@ contract MintableToken is StandardToken, Ownable {
 
   using SafeMath for uint256;
 
+  bool mintingFinished = false;
+
+  uint256 mintedTokens = 0;
+
   event Mint(address indexed to, uint256 amount);
 
   event MintFinished();
@@ -22,17 +26,35 @@ contract MintableToken is StandardToken, Ownable {
   function getTotalTokenCount() public constant returns(uint256) {
     return totalSupply;
   }
+
+  modifier canMint() {
+    require(!mintingFinished);
+    _;
+  }
+
+  function finishMinting() public onlyOwner {
+    mintingFinished = true;
+  }
   
-  function mint(address _address, uint256 _tokens) public {
+  function mint(address _address, uint256 _tokens) canMint onlyOwner public {
+
+    require(mintedTokens < totalSupply);
 
     Mint(_address, _tokens);
 
     balances[_address] = balances[_address].add(_tokens);
+
+    mintedTokens = mintedTokens.add(_tokens);
   }
 
-  function burnTokens(address _address) public {
+  function burnTokens(address _address) onlyOwner public {
     balances[_address] = 0;
     totalSupply = 0;
+    mintedTokens = 0;
+  }
+
+  function burnFinish() onlyOwner public {
+    totalSupply = mintedTokens;
   }
 
 }
